@@ -1,0 +1,22 @@
+<sly data-sly-use.clientlibs="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <sly data-sly-call="${clientlibs.all @ categories='aem.megamenu'}"></sly>
+</sly>
+<sly data-sly-use.menuBar="com.aem.geeks.core.models.MegaMenuHeaderModel">
+    <div>
+        <ul data-sly-list.parentPage="${menuBar.parentPages}">
+            <li>
+                <a href="${parentPage.path @ extension='html'}">${parentPage.title}</a>
+                <ul data-sly-list.childPages="${parentPage.chilPageList}">
+                    <li>
+                        <a href="${childPages.path @ extension='html'}">${childPages.title}</a>
+                        <ul data-sly-list.grandchildPages="${childPages.chilPageList}" style="paddingleft:10px">
+                            <li>
+                                <a href="${grandchildPages.path @ extension='html'}">${grandchildPages.title}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</sly>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2024-01-24T17:13:09.999+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemgeeks/settings/wcm/templates/menu-bar-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/aemgeeks/components/structure/megamenubasepage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemgeeks/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+        <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <experiencefragment
+                jcr:created="{Date}2024-01-24T17:11:57.970+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-24T17:15:13.576+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/experiencefragment"
+                editable="{Boolean}true"/>
+            <container
+                jcr:created="{Date}2024-01-24T17:12:01.289+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-24T17:12:01.289+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/container"
+                editable="{Boolean}true"/>
+            <experiencefragment_1318045446
+                jcr:created="{Date}2024-01-24T17:12:04.817+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-24T17:13:09.996+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/experiencefragment"
+                editable="{Boolean}true"/>
+        </content>
+    </jcr:content>
+</jcr:root>

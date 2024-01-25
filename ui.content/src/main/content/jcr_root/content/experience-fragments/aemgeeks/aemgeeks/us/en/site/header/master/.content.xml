@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-01-24T20:36:22.407+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/aemgeeks/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header"
+        sling:resourceType="aemgeeks/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemgeeks/components/container"
+            layout="simple">
+            <navigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/navigation"
+                collectAllPages="false"
+                navigationRoot="/content/aemgeeks/us/en"
+                skipNavigationRoot="false"
+                structureDepth="1"/>
+            <languagenavigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/languagenavigation"
+                navigationRoot="/content/aemgeeks/us"
+                structureDepth="2"/>
+            <megamenuheader
+                jcr:created="{Date}2024-01-24T17:06:29.339+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-24T20:36:22.405+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/content/megamenuheader"
+                megaMenuRootPath="/content/aemgeeks/us/en"/>
+        </root>
+    </jcr:content>
+</jcr:root>
