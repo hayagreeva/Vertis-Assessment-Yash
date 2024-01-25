@@ -27,12 +27,12 @@ public class MegaMenuModelTest {
 
     private Resource resource;
 
-    public static final String HOME_PAGE_PATH = "/content/aemvertis/us/en";
+    public static final String HOME_PAGE_PATH = "/content/aemgeeks/us/en";
     public static final String HOME_PAGE_JSON = "/content/aemgeeks/home.json";
     public static final String SLASH = "/";
     public static final String JCR_CONTENT = "jcr:content";
     public static final String MEGAMENU_COMP = "/root/container/megamenu";
-    public static final int EIGHT = 8;
+    public static final int SIX = 6;
 
     @BeforeEach
     public void setup() {
@@ -43,10 +43,11 @@ public class MegaMenuModelTest {
         aemContext.currentResource(HOME_PAGE_PATH + SLASH + JCR_CONTENT + MEGAMENU_COMP);
         resource = aemContext.request().getResource();
     }
+
     @Test
     void testInit() {
         megaMenuModel = resource.adaptTo(MegaMenuHeaderModel.class);
         List<MegaMenuParentPagePojo> megaMenuPojoList = megaMenuModel.getParentPages();
-        assertEquals( EIGHT, megaMenuPojoList.size());
+        assertEquals(SIX, megaMenuPojoList.size());
     }
 }

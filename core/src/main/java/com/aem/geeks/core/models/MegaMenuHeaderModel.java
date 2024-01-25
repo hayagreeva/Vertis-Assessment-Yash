@@ -21,10 +21,11 @@ import java.util.List;
 @Model(adaptables = Resource.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class MegaMenuHeaderModel {
-    @SlingObject
-    private ResourceResolver resolver;
+
     @ValueMapValue
     private String megaMenuRootPath;
+    @SlingObject
+    private ResourceResolver resolver;
     private List<MegaMenuParentPagePojo> parentPages;
     private static final int PAGE_LEVEL = 3;
     private static final String HIDE_IN_NAV = "hideInNav";
