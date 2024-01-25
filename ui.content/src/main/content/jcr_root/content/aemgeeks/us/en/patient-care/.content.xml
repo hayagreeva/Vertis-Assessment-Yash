@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-01-23T16:57:19.431+05:30"
+        cq:lastModified="{Date}2024-01-25T13:55:55.628+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemgeeks/settings/wcm/templates/menu-bar-page"
         jcr:primaryType="cq:PageContent"
@@ -16,9 +16,22 @@
                 sling:resourceType="aemgeeks/components/container"
                 layout="responsiveGrid"/>
         </root>
+        <content
+            jcr:lastModified="{Date}2024-01-25T13:38:53.536+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <experiencefragment_2024415234
+                jcr:created="{Date}2024-01-25T13:12:17.834+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-25T13:12:32.373+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemgeeks/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/aemgeeks/us/en/site/header/master"/>
+        </content>
     </jcr:content>
-    <find-a-doctor/>
-    <specialities---services/>
+    <condition-and-treatments/>
+    <specialities-and-services/>
     <health-exchange/>
-    <conditions-and-treatments/>
 </jcr:root>

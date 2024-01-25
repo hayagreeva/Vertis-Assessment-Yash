@@ -2,11 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-01-25T14:01:17.294+05:30"
+        cq:lastModified="{Date}2024-01-25T13:58:12.621+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemgeeks/settings/wcm/templates/menu-bar-page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Carriers"
+        jcr:title="Specialities And Services"
         sling:resourceType="/apps/aemgeeks/components/structure/megamenubasepage">
         <root
             jcr:primaryType="nt:unstructured"
@@ -31,4 +31,6 @@
                 fragmentVariationPath="/content/experience-fragments/aemgeeks/us/en/site/header/master"/>
         </content>
     </jcr:content>
+    <clinical-specialities/>
+    <subspeciality-carrier-and-services/>
 </jcr:root>
